@@ -22,6 +22,7 @@ html,
 body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .container {
@@ -38,12 +39,45 @@ img {
 select {
     display: block;
     width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    
+}
+
+#immigrants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+
+#immigrants > div{
+    flex-basis: calc(50% - 10px);
+    transition: all 0.5s ease-in-out;
+    padding-bottom: 20px;
+
+}
+
+.item{
+    opacity: 0.45;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.item.active{
+    display: block;
+    opacity: 1;
 }
 
 
 /* Tablet/Desktop overrides */
 
-@media(min-width: 681px) {}
+@media(min-width: 681px) {
+    @media(min-width: 681px) {
+        #food > div{
+            flex-basis: calc(33% - 10px);
+        }
+    }
+}
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */

@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- first step to a responsive site -->
-    <title>Food filter</title>
+    <title>Filter Project</title>
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
 
     <!-- Your styles should be called here -->
     <link href="style.css" rel="stylesheet" />
@@ -26,81 +28,66 @@
 <body>
     <!-- YOUR CONTENT GOES HERE -->
     <div class="container">
-        <h1>Grocery shopping</h1>
-        <p>Use the dropdown to filter the items</p>
+        <h1>Health Care Coverage and Immigration Status</h1>
+        <h2>By Hannah Bottum</h2>
+        <p><i>Use the dropdown to filter the items</i></p>
         <div>
             <select class="filter">
-                    <option value="item">Filter...</option>
-                    <option value="fruit">Fruits</option>
-                    <option value="vegetable">Vegetable</option>
-                    <option value="meat">Meat</option>
+                    <option value="immigrants">Filter...</option>
+                    <option value="city">New York City</option>
+                    <option value="state">New York State</option>
+                    <option value="national">United States</option>
                 </select>
         </div>
-        <section id="fruits">
-            <div class="item">
-                <img src="img/apples.jpg" />
-                <h3>Apples</h3>
+        <section id="immigrants">
+
+            <div class="item city active">
+                <img src="img/City - coverage.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/bananas.jpg" />
-                <h3>Bananas</h3>
+            <div class="item national active">
+                <img src="img/Federal - eligibility.jpg" />
             </div>
 
-            <div class="item">
-                <img src="img/carrots.jpg" />
-                <h3>Carrots</h3>
+            <div class="item state active">
+                <img src="img/State - register.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/cherries.jpg" />
-                <h3>Cherries</h3>
+            <div class="item city active">
+                <img src="img/City - eligibility.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/cucumber.jpg" />
-                <h3>Cucumber</h3>
+            <div class="item national active">
+                <img src="img/Federal- coverage.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/onions.jpg" />
-                <h3>Onions</h3>
+            <div class="item state active">
+                <img src="img/State - population.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/peas.jpg" />
-                <h3>Peas</h3>
+            <div class="item state active">
+                <img src="img/State - survey.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/peppers.jpg" />
-                <h3>Peppers</h3>
+            <div class="item national active">
+                <img src="img/Federal - population.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/steak.jpg" />
-                <h3>Steak</h3>
+            <div class="item city active">
+                <img src="img/City - population.jpg"/>
+            </div>
+            
+            <div class="item state active">
+                <img src="img/State - eligibility.jpg"/>
             </div>
 
-            <div class="item">
-                <img src="img/tangerine.jpg" />
-                <h3>Tangerine</h3>
-            </div>
-
-            <div class="item">
-                <img src="img/tomatoes.jpg" />
-                <h3>Tomatoes</h3>
-            </div>
-
-            <div class="item">
-                <img src="img/watermelon.jpg" />
-                <h3>Watermelon</h3>
-            </div>
         </section>
+
     </div>
 
     <!-- Your javascript should be called here -->
     <script src="main.js"></script>
+
 </body>
 
 </html>
